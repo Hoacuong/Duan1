@@ -6,6 +6,7 @@
 package com.hbh.UI;
 
 import java.awt.CardLayout;
+import javax.swing.JOptionPane;
 import javax.swing.UIManager;
 
 /**
@@ -392,6 +393,11 @@ public class homeJFrame extends javax.swing.JFrame {
 
         jLabel14.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel14.setText("Quản lý");
+        jLabel14.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel14MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout QuanLyLayout = new javax.swing.GroupLayout(QuanLy);
         QuanLy.setLayout(QuanLyLayout);
@@ -436,6 +442,11 @@ public class homeJFrame extends javax.swing.JFrame {
 
         jLabel16.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel16.setText("Nhập hàng");
+        jLabel16.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel16MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout NhapHangLayout = new javax.swing.GroupLayout(NhapHang);
         NhapHang.setLayout(NhapHangLayout);
@@ -492,17 +503,23 @@ public class homeJFrame extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnQuanLyMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnQuanLyMouseClicked
-        showCard("QuanLy");
+
     }//GEN-LAST:event_btnQuanLyMouseClicked
 
     private void jLabel8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel8MouseClicked
-        showCard("BanHang");
+
+        
     }//GEN-LAST:event_jLabel8MouseClicked
+
+    private void jLabel16MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel16MouseClicked
+
+    }//GEN-LAST:event_jLabel16MouseClicked
+
+    private void jLabel14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel14MouseClicked
+
+    }//GEN-LAST:event_jLabel14MouseClicked
     
-    void showCard(String name){
-        CardLayout layout = (CardLayout) getContentPane().getLayout();
-        layout.show(getContentPane(), name);
-    }
+
     /**
      * @param args the command line arguments
      */
